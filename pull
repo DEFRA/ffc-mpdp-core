@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+
+set -e
+projectRoot="$(a="/$0"; a=${a%/*}; a=${a:-.}; a=${a#/}/; cd "$a/.." || return; pwd)"
+
+cd "${projectRoot}"
+cd ./ffc-mpdp-frontend && \
+  git pull
+
+cd "${projectRoot}"
+cd ./ffc-mpdp-backend && \
+  git pull

@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+echo 'ffc-mpdp-frontend' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-mpdp-frontend/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
+
+echo 'ffc-mpdp-backend' &&
+  curl --silent "https://api.github.com/repos/defra/ffc-mpdp-backend/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/'
