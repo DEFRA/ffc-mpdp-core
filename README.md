@@ -1,4 +1,7 @@
 # Making Payment Data Public Core
+
+> This repository was for the FCP Platform hosted version of the service. Since migrating to the Core Delivery Platform (CDP), this repository have been replaced with [fcp-mpdp-core](https://github.com/DEFRA/fcp-mpdp-core)
+
 Local development support for orchestrating all MPDP microservices
 
 ## Prerequisites
